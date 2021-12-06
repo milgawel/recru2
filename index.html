@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="wrap">
+			<h1>Zadanie nr 2</h1>
+			<div>
+				<form id="add-book">
+					<div class="form__cell">
+						<label for="title">tytuł książki</label>
+						<input type="text" name="title" id="title" required />
+					</div>
+					<div class="form__cell">
+						<label for="author">autor książki</label>
+						<input type="text" name="author" id="author" required />
+					</div>
+					<div class="form__cell">
+						<label for="priority">priorytet przeczytania</label>
+						<input
+							type="number"
+							name="priority"
+							id="priority"
+							max="5"
+							min="1"
+							required
+						/>
+					</div>
+					<div class="form__cell">
+						<label for="category">lista z kategoriami</label>
+						<select name="category" id="category">
+							<option value="dramat">dramat</option>
+							<option value="komedia">komedia</option>
+							<option value="romans">romans</option>
+						</select>
+					</div>
+					<button type="submit">wyślij książkę</button>
+				</form>
+			</div>
+			<!-- table -->
+			<div class="table" id="table">
+				<div class="table__row--main">
+					<p class="table__row--cell">tytuł książki</p>
+					<p class="table__row--cell">autor książki</p>
+					<p class="table__row--cell">priorytet przeczytania</p>
+					<p class="table__row--cell">lista z kategoriami</p>
+				</div>
+			</div>
+		</div>
+		<script src="./script.js"></script>
+	</body>
+</html>
